@@ -1,4 +1,4 @@
 # kirtiwebathon
-![] (capture.PNG)
-![] (capture1.PNG)
-![] (capture2.PNG)
+![](Capture.PNG)
+![](Capture1.PNG)
+![](Capture2.PNG)
