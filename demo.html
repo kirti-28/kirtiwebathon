@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<!-- Settings of the HTML document -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code School</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1><a href="#">Code School</a></h1>
+            </div>
+            <span class="fa fa-bars menu-icon"></span>
+            <div class="header-right">
+                <a href="#">Lessons</a>
+                <a href="#" class="login">Log in</a>
+            </div>
+        </div>
+    </header>
+    <!-- Top -->
+    <div class="top-wrapper">
+        <div class="container">
+            <h1>WISH TO BECOME A PROGRAMMER ?</h1>
+            <h1>BUT, AFRAID OF CODING ?</h1>
+            <h3>
+                <p>Don't worry ! We have got your back . </p>
+            </h3>
+            <h3>
+                <p> Code School is a website where you can find online resources for all coding necessities..</p>
+            </h3>
+
+            <h2>
+                <p> SIGN UP </p>
+            </h2>
+            <div class="btn-wrapper">
+                <a href="#" class="btn signup">Email</a>
+                <p>or</p>
+                <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Twitter</a
+          >
+          <p>or</p>
+        
+          <a href="#" class="btn twitter"
+            ><span class="fa fa-twitter"></span>Facebook</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Sign up modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times">×</i>
+        </div>
+        <div id="signup-form">
+          <h2>Sign up with email</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="Email" />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Password"
+            />
+            <div id="submit-btn">Sign up</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Lesson -->
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Lets Begin!</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="data:image/jpeg;base64,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" />
+              <h2><p>C Programming</p><h2/>
+            </div>
+            <p class="text-contents">
+                THIS COURSE INCLUDES :
+                <p> 8 weeks on demand video lectures</p>
+                <p> 4 assignments</p>
+                <p> Full lifetime access</p>
+                <p> Certificate of completion</p>
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExMVFRUXGBcaFRgVFxUXFxgXFRUYFxgXFxcYHSggGBolGxcYITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4AMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQIDBQYEB//EADYQAAIBAgMFBwIEBgMAAAAAAAABAgMRBCExBRJBUWFxgZGhsdHwMsETIlLxBhUjYnLhM0KC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJBEBAQACAQQBBAMAAAAAAAAAAAECEQMEEiExYRMyQVEUIlL/2gAMAwEAAhEDEQA/AP3EAAABRlciUioAFAAAAAAAAE1KiirtpLqfDW2mtIpvyKxxuXoOgBxJY+pzt0S9yPxW9W32mk4L+S27bqR5rxF+PHmchSLUh/SLbprEw5lKrHmvE5FSQ0w+lC7q7KYHIjUa0yNo4qS437SbxU+50Gwi7nxrGrjkfXTkmsjO42ez2oAARgAAAAAlsAoCPMtAAZykXJExiAEYlgAAAB8uMx0aeucuCX35Iclt1A+luxy8XtZaU83zencuJzsRi5VPqeXLgjNI68Onk85BrKo5ZybbBOzuRHQo2sS1eeb8L6kIIdRpEhakXBmRURWBakFyUNsRKRLYMfqItM5zZVOq1o2uwhoaRWponRw20OEvHh3n3p30PPI3w+McNM1y9jHPh/yqV2wMsPiIzV13rijU57Ne1kxIolxECLSBIAAAAAAAPj2hjPw1ZfU9OnVjxxuV1Az2ntBU1ux+v069p5+pNttttt95dR3d3qzNno8XHMIjbSLNEjOnoaoqnsFpCSLiibTpqIxjsSSLDgVuZjshbATGybFCAsJSJchKQ9BdxMlsTeQaDOcwUjOrmjOjI17fBzF9dGq4u6yfzJnbweKVRX48V84Hn5MeFxDhJSXY+vQy5OLvnyqR6cDLD11ON1+z5M1OGzRAAAQAAABnXqqCbf79Dz1eq5SbfH5kfftGtvStwXrxPh3Ts4ce2bvtlll5YtGbibyiRJHRKExZpFmaLjmFUtMszRaJpytYse8ZwZpciwKCTJKECYNCuUnkAQ0ZJH0GUojlCJET0NSJIqG+aUiFKzubypkumayxUCElwFFCkCo+vAYt05X/AOr1XTn2no075nkb5Ha2LirrcfDOPZyOXqOPc7oMo6oABxoBjiqu7Fvw7WbHO2rO9ortf2+5WE3lInO6j4bEFuPz9hM7ZXPKixLRdyJlRUrJxGikgsVtexcpEiuBtWKNS4riTJVWykO5mmOItJXGQ7koGI1oUyoITXAnZoaFY03SWhymia4kSibyM2ipT2+VxM5s+qaPnqI1xq2XTx0NKNbckmtU7r2+xLVwWa+fP2KvmeVPXRqpxUlo1dd5aOZsepeG7+l27nmvnQ6SPKzx7crGVM4eJqXnJ9beB2qkrJvkmcBo14Z7rn58tajS98366kiQ4m+mMyRJkNGkmQy4uVIXFcLlLlJkpjmhAqVcBkJlOQaVFXC4rjEpakVEyRpAmwNYvIcWZ3LRFgVJ8fBE2GNCCMiZI0lEiSKhomrmEoam7IZcq5Xz1CMvE2mZVEaTyrbobDrWnu815rP3O8eSoVN2cZcmr9l8z1px9TjrKX9pyY4x2hLs9cjhtHZ2g/6b7vVHGQ+D7XD1H3Q0xpk3Gl1NmMqZILF2BINtJWMkSaziZlRcqQsOwxqlKwFRE0C5Q2FxBa4K2pMuLM4sdxUttkyomUZGqIpbWFyBpk6VKu5EgBgpBnIpyMqjNJFQpMzkhuQpMuLjGoz12HnvQjLmk/FHkKvI9Tsx/wBKH+KMeqn9ZRke0v8Ajl3eqOGjvY1f05dj8jz0UR0/21wdT90aFozRaNq51rtE3YaIkSuUTZHoOQFRcpSiTYuZA4qU0AhOQ1yhjTCSE3kCisVci5URkuLNIswNIE2Bdy4kJFEU5VIlsaIlIJF7KR88kbORhULxVKzRLfuJy4/PmREnd5G0jWVLl4dh67Z0bUoL+1eh42o7a9p7ehG0Yrkl6HN1nqFlVVI3TXNNeJ5p8u49Oed2hT3aku2/jmY9PfNjk6meJWcWXFmUXzKudDk00THNkpjkxCJCemRKWZW8imkqVoJsdyd3lmC4Lkx1K3baityG0h3uDSBLqDyBUQ5DiyW75lKQzsaAh68BzViUHcpPiR6/PIc2T7NUn1JuJNak1JZjkPYbMJs0qTMK0jTGLxY1HmjNu33JqT6CUbu2V+PQ2axph4Oc4xWjkk+9/ZHuTy38O0d6q3b6FfvlkvK/geoTPP6vLeUn6FM5O2ad7TXDJ/b51Oq0ZVaClFp8fI5sMu3KVnnj3Y2PN3KuS48HqvsCPRebV7xUZGTl+wkw0W2jl0G3kSnmCYaXKaYt58BJjS/YFyrb4vuRKZL0fkNMNNJkJIlrIeuoMa5UscCLlQm+Vhntrvg2QlxKcuLIsJSWQ2yFMqLyDQTcUpZEy0JT+dStHEyn1+cTHEvkXVy4mFT5c0xisa+etLjfIqFTdeSyfvl2amVaNmup9Wy8K6lSMeDefRJZl5WTHdb4vT7EwzjTu/qnm7cFwXh6nSElYZ42WXdbaQAAJDibXw27LeWktf8AI+BHpq9JTi4vRnm69Jwk4vh4dqO3gz7pq+44efj7bueqiSJvkU2RrqdEc1XvCctBRfESlcNKirji7maf+y1ILFxbJUguJ8/mQLixSjmCkhJCaxMnwBLIqZn5lHpomVG3iZ3sUnoKw9LbM3UKkjOWgQq0qO6Mt8TlY+dvNsqYhtUXHoZSfIpy8TGPMqRUTJHov4awW7F1Xe8slf8ATfXvsczY2CdWea/Is5c+i7/c9alY5eq5dTsjeejAAOAAAAAD4tpYP8SOX1LTr0PtAeOVxu4nLGZTVeSllly4E5cTvbT2fv8A5or83Ln/ALPPyyfXiejx5zOeHncvHcLqqUg3UTctGiITQBe5UWDSBMUU9H8RLRSlyBcVEpSsZlNisawPmZlOQtRxSWjXMyTz6eZSk/YdUt9dRWzIYOYtFo6q4ny1XZ/Mj6Wz5qq18ysS0GuN/iChh5VJbkdXyy7+xX8h4WjKpLdiru/h1fLU9Zs7Z8aMbLOT+qXP2Rnzc0458qxx2vZ+EVKCgu1vm3qz6QA8y227rYAACAACWwCgI3SosAZz9p7NVRb0cp+vR+50AKxyuN3E5YzKaryE4OLs8mtU9QPT4vBxqarPg1qcTF7PnDPWPNfdcDu4+fHLxfFcPJwZYeZ5j4xlMm3U2ZyhExfT589TTesZyeYovejfUGhXzKjJfsU0lRJ2BDaIfqC5VSlmvt8yHay3rkpcDRJvJZBVys78bkxkNxtk8/moUI3lZK70shjaLtam+C2dOs8laPGT07uZ1MHsXPeqacI+7+x2oxSyWSObl6mTxh7XMd+3z4HAwpRtFdrerfVn0gBw223daAAJlIQE5cijOMTQACShNAElJAkMAAAAAAAAPjxGzqcs7WfNZeWhz6mypL6Xfpo/Y7clcUYmmPLnPyzy4sb+Hlq+FnD6otLhy8UYp5HsTGphKctYRfcjfHqv3GN6f9V5Rqy9BR6cj0stlUf0+Dl7kfyen/d4r2NP5OHyX0co8/FA5JHoP5PS4qT/APT+xotl0f0Lvbfqw/k4fK5xZPLp5rQ+7DYSo3dQffkvM9FSw8I/TFK3JItozy6rfqLnHpxaOyJSzm0n0zy9PU6mFwcKa/JG3N6t9rN0gMMuTLL3WkxkAABmYAAAJlImKuVKNygAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=" />
+              <h3><p>C++</p></h3>
+            </div>
+            <p class="text-contents">
+                THIS COURSE INCLUDES :
+                <p> 10 weeks on demand video lectures</p>
+                <p> 10 assignments</p>
+                <p> Full lifetime access</p>
+                <p> Certificate of completion</p>
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTExMVFRUXGBcaFRgVFxUXFxgXFRUYFxgXFxcYHSggGBolGxcYITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4AMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQIDBQYEB//EADYQAAIBAgMFBwIEBgMAAAAAAAABAgMRBCExBRJBUWFxgZGhsdHwMsETIlLxBhUjYnLhM0KC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJBEBAQACAQQBBAMAAAAAAAAAAAECEQMEEiExYRMyQVEUIlL/2gAMAwEAAhEDEQA/AP3EAAABRlciUioAFAAAAAAAAE1KiirtpLqfDW2mtIpvyKxxuXoOgBxJY+pzt0S9yPxW9W32mk4L+S27bqR5rxF+PHmchSLUh/SLbprEw5lKrHmvE5FSQ0w+lC7q7KYHIjUa0yNo4qS437SbxU+50Gwi7nxrGrjkfXTkmsjO42ez2oAARgAAAAAlsAoCPMtAAZykXJExiAEYlgAAAB8uMx0aeucuCX35Iclt1A+luxy8XtZaU83zencuJzsRi5VPqeXLgjNI68Onk85BrKo5ZybbBOzuRHQo2sS1eeb8L6kIIdRpEhakXBmRURWBakFyUNsRKRLYMfqItM5zZVOq1o2uwhoaRWponRw20OEvHh3n3p30PPI3w+McNM1y9jHPh/yqV2wMsPiIzV13rijU57Ne1kxIolxECLSBIAAAAAAAPj2hjPw1ZfU9OnVjxxuV1Az2ntBU1ux+v069p5+pNttttt95dR3d3qzNno8XHMIjbSLNEjOnoaoqnsFpCSLiibTpqIxjsSSLDgVuZjshbATGybFCAsJSJchKQ9BdxMlsTeQaDOcwUjOrmjOjI17fBzF9dGq4u6yfzJnbweKVRX48V84Hn5MeFxDhJSXY+vQy5OLvnyqR6cDLD11ON1+z5M1OGzRAAAQAAABnXqqCbf79Dz1eq5SbfH5kfftGtvStwXrxPh3Ts4ce2bvtlll5YtGbibyiRJHRKExZpFmaLjmFUtMszRaJpytYse8ZwZpciwKCTJKECYNCuUnkAQ0ZJH0GUojlCJET0NSJIqG+aUiFKzubypkumayxUCElwFFCkCo+vAYt05X/AOr1XTn2no075nkb5Ha2LirrcfDOPZyOXqOPc7oMo6oABxoBjiqu7Fvw7WbHO2rO9ortf2+5WE3lInO6j4bEFuPz9hM7ZXPKixLRdyJlRUrJxGikgsVtexcpEiuBtWKNS4riTJVWykO5mmOItJXGQ7koGI1oUyoITXAnZoaFY03SWhymia4kSibyM2ipT2+VxM5s+qaPnqI1xq2XTx0NKNbckmtU7r2+xLVwWa+fP2KvmeVPXRqpxUlo1dd5aOZsepeG7+l27nmvnQ6SPKzx7crGVM4eJqXnJ9beB2qkrJvkmcBo14Z7rn58tajS98366kiQ4m+mMyRJkNGkmQy4uVIXFcLlLlJkpjmhAqVcBkJlOQaVFXC4rjEpakVEyRpAmwNYvIcWZ3LRFgVJ8fBE2GNCCMiZI0lEiSKhomrmEoam7IZcq5Xz1CMvE2mZVEaTyrbobDrWnu815rP3O8eSoVN2cZcmr9l8z1px9TjrKX9pyY4x2hLs9cjhtHZ2g/6b7vVHGQ+D7XD1H3Q0xpk3Gl1NmMqZILF2BINtJWMkSaziZlRcqQsOwxqlKwFRE0C5Q2FxBa4K2pMuLM4sdxUttkyomUZGqIpbWFyBpk6VKu5EgBgpBnIpyMqjNJFQpMzkhuQpMuLjGoz12HnvQjLmk/FHkKvI9Tsx/wBKH+KMeqn9ZRke0v8Ajl3eqOGjvY1f05dj8jz0UR0/21wdT90aFozRaNq51rtE3YaIkSuUTZHoOQFRcpSiTYuZA4qU0AhOQ1yhjTCSE3kCisVci5URkuLNIswNIE2Bdy4kJFEU5VIlsaIlIJF7KR88kbORhULxVKzRLfuJy4/PmREnd5G0jWVLl4dh67Z0bUoL+1eh42o7a9p7ehG0Yrkl6HN1nqFlVVI3TXNNeJ5p8u49Oed2hT3aku2/jmY9PfNjk6meJWcWXFmUXzKudDk00THNkpjkxCJCemRKWZW8imkqVoJsdyd3lmC4Lkx1K3baityG0h3uDSBLqDyBUQ5DiyW75lKQzsaAh68BzViUHcpPiR6/PIc2T7NUn1JuJNak1JZjkPYbMJs0qTMK0jTGLxY1HmjNu33JqT6CUbu2V+PQ2axph4Oc4xWjkk+9/ZHuTy38O0d6q3b6FfvlkvK/geoTPP6vLeUn6FM5O2ad7TXDJ/b51Oq0ZVaClFp8fI5sMu3KVnnj3Y2PN3KuS48HqvsCPRebV7xUZGTl+wkw0W2jl0G3kSnmCYaXKaYt58BJjS/YFyrb4vuRKZL0fkNMNNJkJIlrIeuoMa5UscCLlQm+Vhntrvg2QlxKcuLIsJSWQ2yFMqLyDQTcUpZEy0JT+dStHEyn1+cTHEvkXVy4mFT5c0xisa+etLjfIqFTdeSyfvl2amVaNmup9Wy8K6lSMeDefRJZl5WTHdb4vT7EwzjTu/qnm7cFwXh6nSElYZ42WXdbaQAAJDibXw27LeWktf8AI+BHpq9JTi4vRnm69Jwk4vh4dqO3gz7pq+44efj7bueqiSJvkU2RrqdEc1XvCctBRfESlcNKirji7maf+y1ILFxbJUguJ8/mQLixSjmCkhJCaxMnwBLIqZn5lHpomVG3iZ3sUnoKw9LbM3UKkjOWgQq0qO6Mt8TlY+dvNsqYhtUXHoZSfIpy8TGPMqRUTJHov4awW7F1Xe8slf8ATfXvsczY2CdWea/Is5c+i7/c9alY5eq5dTsjeejAAOAAAAAD4tpYP8SOX1LTr0PtAeOVxu4nLGZTVeSllly4E5cTvbT2fv8A5or83Ln/ALPPyyfXiejx5zOeHncvHcLqqUg3UTctGiITQBe5UWDSBMUU9H8RLRSlyBcVEpSsZlNisawPmZlOQtRxSWjXMyTz6eZSk/YdUt9dRWzIYOYtFo6q4ny1XZ/Mj6Wz5qq18ysS0GuN/iChh5VJbkdXyy7+xX8h4WjKpLdiru/h1fLU9Zs7Z8aMbLOT+qXP2Rnzc0458qxx2vZ+EVKCgu1vm3qz6QA8y227rYAACAACWwCgI3SosAZz9p7NVRb0cp+vR+50AKxyuN3E5YzKaryE4OLs8mtU9QPT4vBxqarPg1qcTF7PnDPWPNfdcDu4+fHLxfFcPJwZYeZ5j4xlMm3U2ZyhExfT589TTesZyeYovejfUGhXzKjJfsU0lRJ2BDaIfqC5VSlmvt8yHay3rkpcDRJvJZBVys78bkxkNxtk8/moUI3lZK70shjaLtam+C2dOs8laPGT07uZ1MHsXPeqacI+7+x2oxSyWSObl6mTxh7XMd+3z4HAwpRtFdrerfVn0gBw223daAAJlIQE5cijOMTQACShNAElJAkMAAAAAAAAPjxGzqcs7WfNZeWhz6mypL6Xfpo/Y7clcUYmmPLnPyzy4sb+Hlq+FnD6otLhy8UYp5HsTGphKctYRfcjfHqv3GN6f9V5Rqy9BR6cj0stlUf0+Dl7kfyen/d4r2NP5OHyX0co8/FA5JHoP5PS4qT/APT+xotl0f0Lvbfqw/k4fK5xZPLp5rQ+7DYSo3dQffkvM9FSw8I/TFK3JItozy6rfqLnHpxaOyJSzm0n0zy9PU6mFwcKa/JG3N6t9rN0gMMuTLL3WkxkAABmYAAAJlImKuVKNygAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=" />
+              <h3><p>Java</p></h3>
+            </div>
+            <p class="text-contents">
+                THIS COURSE INCLUDES :
+                <p> 15 weeks on demand video lectures</p>
+                <p> 10 assignments</p>
+                <p> Full lifetime access</p>
+                <p> Certificate of completion</p>
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="data:image/jpeg;base64,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" />
+              <h3><p>Python</p></h3>
+            </div>
+            <p class="text-contents">
+                THIS COURSE INCLUDES :
+                <p> 10 weeks on demand video lectures</p>
+                <p> 10 assignments</p>
+                <p> Full lifetime access</p>
+                <p> Certificate of completion</p>
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Message -->
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          
+          <h2>Let's learn to code, learn to be creative!</h2>
+        </div>
+        <span class="btn message">Start Learning</span>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+    
+    <div class="container">
+        
+        <h2>Help</h2>
+     
+      <script type="text/javascript" src="script.js"></script>
+    </div>
+    </footer>
+  </body>
+</html>
